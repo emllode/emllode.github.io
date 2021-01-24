@@ -346,6 +346,12 @@ body {
   letter-spacing: 4px;
 }
 
+@media (max-width: 63.9375em) {
+  .container {
+    height: 40vh;
+  }
+}
+
 .container h2 {
   left: 0;
   line-height: 100px;
@@ -426,7 +432,7 @@ body {
 @media (max-width: 63.9375em) {
   .bothButtons a {
     font-size: 13px;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 }
 
@@ -647,7 +653,7 @@ body {
 
 @media (max-width: 39.9375em) {
   .text {
-    padding: 0.1rem;
+    padding: 3rem;
   }
   .text__items {
     text-align: center;

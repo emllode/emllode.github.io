@@ -6,6 +6,12 @@
 		justify-content: center;
         height: 45vh;
         letter-spacing: 4px;
+
+        @include breakpoint-down(medium) {
+            height: 40vh;
+
+
+        }
         
 
     h2 {
