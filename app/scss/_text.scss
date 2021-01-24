@@ -1,0 +1,30 @@
+.text {
+    padding: 1rem;
+
+    &__items {
+        text-align: center;
+        margin-top:20rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+        letter-spacing: 4px;
+    }
+    p {
+        font-size: 2rem;
+        letter-spacing: 3px;
+        margin-bottom: 3rem;
+    }
+
+}
+
+.links {
+    font-weight: bolder;
+    text-decoration: none;
+    color: whitesmoke;
+    
+    &:hover {
+        color: chocolate;
+    }
+}
+

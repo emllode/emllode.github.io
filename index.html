@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Bergman</title>
+    <link href="/app/scss/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <header class="header">
+      <div class="overlay has-fade"></div>
+  
+      <nav>
+          <a id="btnHamburger" href="#" class="header__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+      </nav>
+
+      <div class="header__menu has-fade"> 
+        <a href="index.html" class="header__navLink">Portfolio</a>
+        <a href="html/musicAndVideos.html" class="header__navLink">CV</a>
+        <a href="html/merch.html" class="header__navLink">About</a>
+        <a href="html/about.html"class="header__navLink">Home</a>
+       
+      </div>
+  
+  
+
+    </header>
+
+    <section class="container">
+        <h2>Christopher</h2>
+        <h2>Bergman</h2>
+       <p><span id="words" >[ Software Engineer ]</span></p>
+    </section>  
+
+
+    <section class="bothButtons">
+     <div class="bothButtons_items">
+    
+        <div class="bothButtons_item">
+            <a href="#">Portfolio</a>
+        </div>
+
+      
+
+     </div>
+
+     </section>
+
+     <div class="socialMedia">
+      <div class="icon-bar">
+        <a href="https://github.com/emllode" target="_blank" class="github"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/christopher-bergman-5a413968/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <!-- BEHÖVER LÖSAS, så deras mail blir popup med min mail-adress inuti --->
+        <a href=".cb.christopherbergman@gmail.com" class="google"><i class="fa fa-google"></i></a>
+     </div>
+     </div>
+
+     <div class="footer">
+      <p>	&#169; Christopher Bergman</p>
+    </div>
+
+     <script type="text/javascript">
+      (function () {
+        var words = [
+         "[ Software Engineer ]",
+         "[ HTML, SASS, JavaScript ]",
+         "[ C#, .NET, SQL ]",
+         "[ Python ]"
+        ],
+        i = 0;
+        setInterval(function(){
+          $('#words').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+          });
+        }, 2200)
+      })();
+    </script>
+   
+    <script src="/app/js/script.js"></script>
+</body>
+</html>
