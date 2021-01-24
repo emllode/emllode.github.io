@@ -413,7 +413,7 @@ body {
 @media (max-width: 63.9375em) {
   .bothButtons a {
     font-size: 13px;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
   }
 }
 
@@ -548,10 +548,11 @@ body {
 .article__item {
   border-radius: 1.5125rem;
   overflow: hidden;
-  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 3px 12px rgba(124, 121, 121, 0.15);
+          box-shadow: 0px 3px 12px rgba(124, 121, 121, 0.15);
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  text-decoration: none;
   max-width: 30.375rem;
   margin: 0 auto;
 }
@@ -562,8 +563,8 @@ body {
 }
 
 .article__image {
-  height: 12.5rem;
-  background-size: cover;
+  height: 13rem;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -587,6 +588,13 @@ body {
   color: black;
   margin-bottom: 0.5rem;
   font-weight: bolder;
+}
+
+.article__title span {
+  font-size: 15px;
+  display: block;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .article__description {
