@@ -248,7 +248,7 @@ body {
   }
 }
 
-.header__links a {
+.header__navlinks a {
   position: relative;
   font-size: larger;
   color: black;
@@ -256,11 +256,11 @@ body {
   transition: color 300ms ease-in-out;
 }
 
-.header__links a:not(:last-child) {
+.header__navlinks a:not(:last-child) {
   margin-right: 5rem;
 }
 
-.header__links a:hover {
+.header__navlinks a:hover {
   color: #292B38;
 }
 
