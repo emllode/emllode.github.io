@@ -20,6 +20,28 @@
         font-size: 1.5rem;
     }
 
+    @include breakpoint-down(medium) {
+        padding: 2rem;
+        &__items {
+            text-align: center;
+            margin-top: 8rem;
+        }
+    
+        h1 {
+            font-size: 2rem;
+            letter-spacing: 4px;
+        }
+        p {
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+        }
+    
+        span {
+            font-size: 1rem;
+        }
+        
+    }
 }
 
 .links {

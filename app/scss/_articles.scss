@@ -8,6 +8,10 @@
             padding: 7rem;
             margin-top: 8rem;
         }
+
+        @include breakpoint-down(small) {
+            padding: 3rem;
+        }
     }
 
     &__grid {

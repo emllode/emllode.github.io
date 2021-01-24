@@ -84,6 +84,11 @@
         padding: 1.625rem;
         border-radius: 10px;
 
+        @include breakpoint-down(medium) {
+          padding: 0.8rem;
+          
+        }
+
        
        
     
@@ -131,6 +136,11 @@
         text-transform: uppercase;
         position: relative;
         padding: 3px 0;
+        
+        @include breakpoint-down(medium) {
+          padding: 0;
+          font-size: 14px;
+        }
 
         &::before, &::after {
          content:"";
