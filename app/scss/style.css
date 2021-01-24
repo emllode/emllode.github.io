@@ -211,6 +211,13 @@ body {
           transform-origin: 2px 5px;
 }
 
+@media (max-width: 39.9375em) {
+  .header__toggle > span {
+    width: 40px;
+    height: 2px;
+  }
+}
+
 .header__toggle > span:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -356,7 +363,18 @@ body {
     margin-left: 5rem;
   }
   .container p {
-    font-size: 2vh;
+    font-size: 1.5vh;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .container h2 {
+    font-size: 4vh;
+    margin-left: 5rem;
+  }
+  .container p {
+    font-size: 1.2vh;
     margin-left: 5rem;
   }
 }
@@ -388,6 +406,13 @@ body {
 @media (max-width: 63.9375em) {
   .bothButtons a {
     font-size: 16px;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .bothButtons a {
+    font-size: 13px;
     margin-top: 2.5rem;
   }
 }
@@ -587,6 +612,10 @@ body {
   font-size: 2rem;
   letter-spacing: 3px;
   margin-bottom: 3rem;
+}
+
+.text span {
+  font-size: 1.5rem;
 }
 
 .links {

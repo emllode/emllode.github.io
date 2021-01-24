@@ -37,9 +37,21 @@
             margin-left: 5rem;
         }
         p {
-            font-size: 2vh;
+            font-size: 1.5vh;
             margin-left: 5rem;
         }
     }
+    @include breakpoint-down(small) {
+        h2 {
+            font-size: 4vh;
+            margin-left: 5rem;
+        }
+        p {
+            font-size: 1.2vh;
+            margin-left: 5rem;
+        }
+      
+    }
+    
 
 }

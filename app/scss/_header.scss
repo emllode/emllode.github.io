@@ -61,11 +61,17 @@
           background-color: chocolate;
           transition: all 0.8s ease-in-out;
           transform-origin: 2px 5px;
+
+          @include breakpoint-down(small) {
+            width: 40px;
+            height: 2px;
+          }
     
           &:not(:last-child){
             margin-bottom: 8px;
           }
         }
+      
       }
     
       &__menu {
