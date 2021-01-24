@@ -234,7 +234,7 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .header__menu {
     padding: 0.8rem;
   }
@@ -248,9 +248,9 @@ body {
   font-size: x-large;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .header__menu a {
-    font-size: medium;
+    font-size: small;
   }
 }
 
@@ -281,7 +281,7 @@ body {
   padding: 3px 0;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .header__navLink {
     padding: 0;
     font-size: 14px;
@@ -304,7 +304,7 @@ body {
   transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .header__navLink::before, .header__navLink::after {
     left: 2rem;
     right: 1rem;
@@ -645,25 +645,25 @@ body {
   font-size: 1.5rem;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .text {
-    padding: 2rem;
+    padding: 0.1rem;
   }
   .text__items {
     text-align: center;
     margin-top: 8rem;
   }
   .text h1 {
-    font-size: 2rem;
-    letter-spacing: 4px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
   }
   .text p {
-    font-size: 1rem;
-    letter-spacing: 2px;
-    margin-bottom: 3rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
   }
   .text span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
