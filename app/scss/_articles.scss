@@ -1,17 +1,16 @@
 .article {
  
     &__content {
-        padding: 17rem;
+        padding: 2rem;
+
+        @include breakpoint-up(medium) {
+            padding: 8rem;
+        }
+
+        @include breakpoint-up(large) {
+            padding: 15rem;
+        }
      
-
-        @include breakpoint-down(medium) {
-            padding: 7rem;
-            margin-top: 8rem;
-        }
-
-        @include breakpoint-down(small) {
-            padding: 3rem;
-        }
     }
 
     &__grid {
@@ -19,14 +18,10 @@
         grid-template-columns: 1fr;
         gap: 3.875rem;
 
-
         @include breakpoint-up(medium) {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @include breakpoint-up(large) {
-            grid-template-columns: repeat(2, 1fr);
-        }
     }
     
     &__item {
@@ -36,9 +31,23 @@
         transition: all 150ms ease-in-out;
         text-decoration: none;
 
-        max-width: 30.375rem;
+        max-width: 15.375rem;
+        max-height: 30rem;
         margin: 0 auto;
+        margin-top: 5rem;
 
+        @include breakpoint-up(medium) {
+            max-width: 25rem;
+            max-height: 40rem;
+        }
+
+        @include breakpoint-up(large) {
+            margin-top: 0;
+            max-width: 30rem;
+            max-height: 50rem;
+        }
+
+     
         &:hover {
             transform: scale(1.05);
         }
@@ -85,6 +94,5 @@
     &__description {
         font-size: 1.0125rem;
         margin-bottom: 1rem;
-
     }
 }

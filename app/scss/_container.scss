@@ -4,56 +4,56 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-        height: 45vh;
+        height: 40vh;
         letter-spacing: 4px;
 
-        @include breakpoint-down(medium) {
-            height: 40vh;
+        @include breakpoint-up(large) {
+            height: 45vh;
 
 
         }
         
 
     h2 {
-        left: 0;
+        font-size: 50px;
+        margin-left: 5rem;
         line-height: 100px;
         margin-top: -100px;
         position: relative;
         text-align: center;
         top: 50%;
         width: 100%;
-        font-size: 8vh;
-        margin-left: 4rem;
+    
     }
     p {
-        left: 0;
+        font-size: 12px;
+        margin-left: 5rem;
         line-height: 100px;
         margin-top: -100px;
         position: relative;
         text-align: center;
         top: 50%;
         width: 100%;
-        font-size: 4vh;
-        margin-left: 4rem;
+   
     }
 
-    @include breakpoint-down(medium) {
+    @include breakpoint-up(medium) {
         h2 {
-            font-size: 5vh;
+            font-size: 75px;
             margin-left: 5rem;
         }
         p {
-            font-size: 1.5vh;
+            font-size: 30px;
             margin-left: 5rem;
         }
     }
-    @include breakpoint-down(small) {
+    @include breakpoint-up(large) {
         h2 {
-            font-size: 4vh;
+            font-size: 120px;
             margin-left: 5rem;
         }
         p {
-            font-size: 1.2vh;
+            font-size: 50px;
             margin-left: 5rem;
         }
       
