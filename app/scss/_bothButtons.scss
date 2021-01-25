@@ -15,17 +15,17 @@
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 4px;
+      
+      @include breakpoint-up(medium) {
+        font-size: 16px;
+        margin-top: 4rem;
+      }
 
-        @include breakpoint-up(medium) {
-          font-size: 16px;
-          margin-top: 4rem;
-        }
-
-        
-        @include breakpoint-up(large) {
-          font-size: 24px;
-          margin-top: 5rem; 
-        }
+      
+      @include breakpoint-up(large) {
+        font-size: 24px;
+        margin-top: 5rem; 
+      }
 
     
 

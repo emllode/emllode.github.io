@@ -285,11 +285,11 @@ body {
 
 .header__navLink::before, .header__navLink::after {
   content: "";
-  width: 50%;
+  width: 100%;
   height: 2px;
   background-color: chocolate;
   position: absolute;
-  left: 2.5rem;
+  left: 0rem;
   right: 0rem;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -297,20 +297,6 @@ body {
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
-}
-
-@media (min-width: 40em) {
-  .header__navLink::before, .header__navLink::after {
-    left: 4rem;
-    right: 5rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .header__navLink::before, .header__navLink::after {
-    left: 13rem;
-    right: 3rem;
-  }
 }
 
 .header__navLink::after {

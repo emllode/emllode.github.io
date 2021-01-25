@@ -136,29 +136,15 @@
 
         &::before, &::after {
          content:"";
-        width: 50%;
+        width: 100%;
         height: 2px;
         background-color: chocolate;
         position: absolute;
-        left: 2.5rem;
+        left: 0rem;
         right: 0rem;
         transform: scaleX(0);
         transition: transform 0.7s;
 
-        @include breakpoint-up(medium) {
-          left: 4rem;
-          right: 5rem,
-          
-           
-
-        }
-        
-        @include breakpoint-up(large) {
-          left: 13rem;
-          right: 3rem,
-       
-
-      }
         }
         
         &::after {
