@@ -1,7 +1,7 @@
 .article {
  
     &__content {
-        padding: 2rem;
+        padding: 4m;
 
         @include breakpoint-up(medium) {
             padding: 8rem;
@@ -52,7 +52,6 @@
             transform: scale(1.05);
         }
        
-
     }
 
     &__image {
@@ -60,6 +59,7 @@
         background-size: contain    ;
         background-repeat: no-repeat;
         background-position: center center;
+      
 
     }
 

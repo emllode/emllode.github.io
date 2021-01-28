@@ -316,6 +316,137 @@ body {
           transform: scaleX(1);
 }
 
+@media (min-width: 64em) {
+  .movieHUB {
+    padding: 3rem;
+    text-align: center;
+  }
+}
+
+.movieHUB__items {
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.movieHUB__items .movieHUB__gif {
+  height: 15rem;
+  width: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 5rem;
+}
+
+@media (min-width: 40em) {
+  .movieHUB__items .movieHUB__gif {
+    height: 25rem;
+    width: 30rem;
+    margin-left: 10rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .movieHUB__items .movieHUB__gif {
+    height: 40rem;
+    width: 60rem;
+    margin-left: 0;
+  }
+}
+
+.movieHUB__item {
+  border-radius: 0.5125rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 3px 12px rgba(124, 121, 121, 0.15);
+          box-shadow: 0px 3px 12px rgba(124, 121, 121, 0.15);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none;
+  max-width: 50rem;
+  max-height: 50rem;
+  margin: 0 auto;
+  margin-top: 0rem;
+}
+
+@media (min-width: 40em) {
+  .movieHUB__item {
+    max-width: 80rem;
+    max-height: 60rem;
+    margin: 0 auto;
+  }
+}
+
+.movieHUB__item h1 {
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (min-width: 40em) {
+  .movieHUB__item h1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 64em) {
+  .movieHUB__item h1 {
+    font-size: 48px;
+  }
+}
+
+.movieHUB__item p {
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (min-width: 40em) {
+  .movieHUB__item p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 64em) {
+  .movieHUB__item p {
+    font-size: 20px;
+  }
+}
+
+.movieHUB__item h3 {
+  text-align: center;
+  font-size: 16px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (min-width: 40em) {
+  .movieHUB__item h3 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 64em) {
+  .movieHUB__item h3 {
+    font-size: 24px;
+    padding-left: 2em;
+    padding-right: 2rem;
+  }
+}
+
+.movieHUB__item .githubLink {
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.movieHUB__item .githubLink:hover {
+  color: chocolate;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,7 +643,7 @@ body {
 }
 
 .article__content {
-  padding: 2rem;
+  padding: 4m;
 }
 
 @media (min-width: 40em) {
