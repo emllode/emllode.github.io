@@ -1,7 +1,7 @@
 .article {
  
     &__content {
-        padding: 4m;
+        padding-left: 3em;
 
         @include breakpoint-up(medium) {
             padding: 8rem;

@@ -694,7 +694,7 @@ body {
 }
 
 .article__content {
-  padding: 4m;
+  padding-left: 3em;
 }
 
 @media (min-width: 40em) {
