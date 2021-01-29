@@ -482,7 +482,46 @@ body {
   width: 100%;
 }
 
+.container h2 .i {
+  position: relative;
+}
+
+.container h2 .i::after {
+  content: '.';
+  position: absolute;
+  bottom: .575em;
+  left: 0;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-0.25em);
+            transform: translateY(-0.25em);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-0.25em);
+            transform: translateY(-0.25em);
+  }
+}
+
+.container h2 .bouncing::after {
+  -webkit-animation: bounce 0.6s infinite alternate cubic-bezier(0, 0, 0.1, 1);
+          animation: bounce 0.6s infinite alternate cubic-bezier(0, 0, 0.1, 1);
+}
+
 .container p {
+  padding-top: 1rem;
   font-size: 12px;
   margin-left: 5rem;
   line-height: 100px;
@@ -759,11 +798,6 @@ body {
 .text h1 {
   font-size: 1.5rem;
   letter-spacing: 2px;
-}
-
-.text h1 #punkt {
-  color: chocolate;
-  font-weight: bolder;
 }
 
 .text p {
