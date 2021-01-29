@@ -27,6 +27,12 @@
 
         .i {
             position: relative;
+          
+          }
+
+          .i::before {
+            content: '.';
+
           }
           
           .i::after {
