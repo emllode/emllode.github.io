@@ -15,7 +15,7 @@
         
 
     h2 {
-        font-size: 50px;
+        font-size: 30px;
         margin-left: 5rem;
         line-height: 100px;
         margin-top: -100px;
@@ -33,7 +33,7 @@
           .i::after {
             content: '.';
             position: absolute;
-            bottom: .075em;
+            bottom: -0.6em;
             left: 0;
 
             @include breakpoint-up(medium) {
