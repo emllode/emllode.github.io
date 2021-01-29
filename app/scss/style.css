@@ -486,10 +486,6 @@ body {
   position: relative;
 }
 
-.container h2 .i::before {
-  content: '.';
-}
-
 .container h2 .i::after {
   content: '.';
   position: absolute;
