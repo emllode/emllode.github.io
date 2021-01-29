@@ -30,17 +30,23 @@
           
           }
 
-        
-          
           .i::after {
             content: '.';
             position: absolute;
-            bottom: .575em;
+            bottom: .075em;
             left: 0;
+
+            @include breakpoint-up(medium) {
+                bottom: .375em;
+            }
+            @include breakpoint-up(medium) {
+                bottom: .575em;
+            }
           }
           
           @keyframes bounce {
             from {
+
               transform: translateY(0);
             }
 

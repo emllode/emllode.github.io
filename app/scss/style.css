@@ -489,8 +489,20 @@ body {
 .container h2 .i::after {
   content: '.';
   position: absolute;
-  bottom: .575em;
+  bottom: .075em;
   left: 0;
+}
+
+@media (min-width: 40em) {
+  .container h2 .i::after {
+    bottom: .375em;
+  }
+}
+
+@media (min-width: 40em) {
+  .container h2 .i::after {
+    bottom: .575em;
+  }
 }
 
 @-webkit-keyframes bounce {
