@@ -28,6 +28,7 @@ btnHamburger.addEventListener('click', function(){
   }  
 });
 
+
 $( '.js-input' ).keyup(function() {
   if( $(this).val() ) {
      $(this).addClass('not-empty');
@@ -35,4 +36,14 @@ $( '.js-input' ).keyup(function() {
      $(this).removeClass('not-empty');
   }
 }); 
+
+
+//Animation till  about sidan
+new TypeIt('#typeitspan', {
+  strings: '',
+  speed: 70, 
+  afterComplete: function (step, instance) {
+    instance.destroy();
+  }
+}).go();
 
