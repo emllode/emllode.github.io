@@ -705,7 +705,7 @@ body {
 
 @media (min-width: 64em) {
   .article__content {
-    padding: 15rem;
+    padding: 13rem;
   }
 }
 
@@ -725,12 +725,13 @@ body {
 }
 
 .article__item {
-  border-radius: 1.5125rem;
   overflow: hidden;
-  -webkit-box-shadow: 0px 3px 12px rgba(124, 121, 121, 0.15);
-          box-shadow: 0px 3px 12px rgba(124, 121, 121, 0.15);
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+  opacity: 1;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  visibility: visible;
   text-decoration: none;
   max-width: 15.375rem;
   max-height: 30rem;
@@ -741,25 +742,26 @@ body {
 @media (min-width: 40em) {
   .article__item {
     max-width: 25rem;
-    max-height: 40rem;
+    max-height: 25em;
   }
 }
 
 @media (min-width: 64em) {
   .article__item {
     margin-top: 0;
-    max-width: 30rem;
-    max-height: 50rem;
+    max-width: 25rem;
+    max-height: 25.5em;
   }
 }
 
 .article__item:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  display: block;
 }
 
 .article__image {
-  height: 13rem;
+  height: 14.75em;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -784,6 +786,7 @@ body {
   color: black;
   margin-bottom: 0.5rem;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 .article__title span {
@@ -796,6 +799,26 @@ body {
 .article__description {
   font-size: 1.0125rem;
   margin-bottom: 1rem;
+}
+
+#hideText {
+  display: none;
+  font-size: 38px;
+  text-align: center;
+  font-weight: 500;
+  padding: 7rem;
+  color: black;
+  background-color: black;
+  color: #fff;
+  padding: 0.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+#cardHide:hover #hideText {
+  display: block;
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
 }
 
 .text {
