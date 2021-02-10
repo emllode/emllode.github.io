@@ -1,88 +1,78 @@
 .text {
-    padding: 3rem;
+  padding: 3rem;
 
-    
+  &__items {
+    text-align: center;
+    margin-top: 8rem;
+  }
+
+  #typeitspan {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  @include breakpoint-up(medium) {
+    padding: 4rem;
     &__items {
-        text-align: center;
-        margin-top: 8rem;
+      text-align: center;
+      margin-top: 8rem;
     }
 
     #typeitspan {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-   
+      font-size: 3em;
+      letter-spacing: 2px;
     }
     p {
-        font-size: 0.9rem;
-        letter-spacing: 1px;
-        margin-bottom: 1rem;
-     
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
     }
 
     span {
-        font-size: 0.8rem;
+      font-size: 1rem;
+    }
+  }
+
+  @include breakpoint-up(large) {
+    padding: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    &__items {
+      text-align: center;
+      margin-top: 10rem;
     }
 
-    @include breakpoint-up(medium) {
-
-        padding: 4rem;
-        &__items {
-            text-align: center;
-            margin-top: 8rem;
-        }
-    
-        #typeitspan {
-            font-size: 3em;
-            letter-spacing: 2px;
-        }
-        p {
-            font-size: 1.5rem;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-        }
-    
-        span {
-            font-size: 1rem;
-        }
-
+    #typeitspan {
+      font-size: 5em;
+      letter-spacing: 4px;
     }
-    
-    @include breakpoint-up(large) {
-
-        padding: 5rem;
-        padding-left: 10rem;
-        padding-right: 10rem;
-        &__items {
-            text-align: center;
-            margin-top: 10rem;
-        }
-    
-        #typeitspan {
-            font-size: 5em;
-            letter-spacing: 4px;
-     
-        }
-        p {
-            font-size: 2.5rem;
-            letter-spacing: 3px;
-            margin-bottom: 1rem;
-        }
-    
-        span {
-            font-size:2rem;
-        }
-     
-
+    p {
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+      margin-bottom: 1rem;
     }
+
+    span {
+      font-size: 2rem;
+    }
+  }
 }
 
 .links {
-    font-weight: bolder;
-    text-decoration: none;
-    color: whitesmoke;
-    
-    &:hover {
-        color: chocolate;
-    }
-}
+  font-weight: bolder;
+  text-decoration: none;
+  color: whitesmoke;
 
+  &:hover {
+    color: chocolate;
+  }
+}
